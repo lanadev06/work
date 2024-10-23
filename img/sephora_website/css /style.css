@@ -1,0 +1,86 @@
+.bg-image {
+    background-image: url("../img/IMG_6817.JPG");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-shadow {
+    background-color: rgba(0, 0, 0, .5);
+}
+
+a.hover-1 {
+    position: relative;
+    color:black;
+}
+
+a.hover-1:hover {
+    color: black;
+}
+
+
+a.hover-1:hover::before {
+    content: '';
+    position: absolute;
+    animation: hover-1 2s infinite;
+    top: 35px;
+    width: 106px;
+    height: 2px;
+    background-color: orange;
+    transition: .5s all;
+}
+
+@keyframes hover-1 {
+    0% {
+        width: 0;
+        height: 0;
+    }
+    50% {
+        width: 106px;
+        height: 2px;
+    }
+    75% {
+        width: 0;
+        height: 0;
+    }
+    100% {
+        width: 0;
+        height: 0;
+    }
+
+}
+
+.bg-purple {
+    background-color: rgb(191, 161, 217);
+}
+
+input.border {
+    background-color: rgb(232, 221, 221);
+    border: black;
+}
+
+a.hover-2 {
+    position: relative;
+    color: black;
+    
+}
+
+a.hover-2:hover {
+    border-bottom: solid black;
+    transition: .2s all;
+}
+
+.pr-5 {
+    padding-left: auto;
+}
+.pricing-card {
+    border: 2px solid #ffffff;
+    transition: all 0.3s ease;
+}
+
+.pricing-card:hover {
+    transform: scale(1.05);
+    background-color: #f1f1f1;
+}
